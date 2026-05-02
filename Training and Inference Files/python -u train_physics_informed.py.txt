@@ -1,0 +1,84 @@
+python -u train_physics_informed.py train_num_samples=15 val_num_samples=15 | tee physics_ns_only_log.txt
+Warp DeprecationWarning: The symbol `warp.context.Device` will soon be removed from the public API. Use `warp.Device` instead.
+[2026-04-22 13:23:25,854][checkpoint][WARNING] - Provided checkpoint directory ./checkpoints_physics_ns_only does not exist, skipping load
+[2026-04-22 13:23:25,854][main][INFO] - Using NS-only physics-informed training with train_num_samples=15, val_num_samples=15, max_epochs=260, log_every_steps=1, val_every_steps=7.
+Epoch 1/260 | Step 1/7 | Global 1 | Total 2.012275 | Data 1.732337 | NS 279.937439 | LR 1.00e-03
+Epoch 1/260 | Step 2/7 | Global 2 | Total 0.940974 | Data 0.796650 | NS 144.323975 | LR 1.00e-03
+Epoch 1/260 | Step 3/7 | Global 3 | Total 1.075275 | Data 0.967721 | NS 107.553970 | LR 9.99e-04
+Epoch 1/260 | Step 4/7 | Global 4 | Total 0.664192 | Data 0.627170 | NS 37.022789 | LR 9.99e-04
+Epoch 1/260 | Step 5/7 | Global 5 | Total 0.652281 | Data 0.598169 | NS 54.111958 | LR 9.99e-04
+Epoch 1/260 | Step 6/7 | Global 6 | Total 0.709087 | Data 0.670873 | NS 38.213955 | LR 9.99e-04
+Epoch 1/260 | Step 7/7 | Global 7 | Total 0.651622 | Data 0.634024 | NS 17.597197 | LR 9.98e-04
+[2026-04-22 13:32:53,494][train][INFO] - Epoch 1 Metrics: Learning Rate =  9.983e-04, Mini-batch total loss =  3.193e-01, Mini-batch data loss =  2.870e-01, Mini-batch NS phy loss =  3.232e+01
+[2026-04-22 13:32:53,495][train][INFO] - Epoch Execution Time:  5.676e+02s, Time/Iter:  2.703e+04ms
+Epoch 2/260 | Step 1/7 | Global 8 | Total 0.645675 | Data 0.634331 | NS 11.343666 | LR 9.98e-04
+Epoch 2/260 | Step 2/7 | Global 9 | Total 0.599234 | Data 0.587957 | NS 11.277382 | LR 9.98e-04
+Epoch 2/260 | Step 3/7 | Global 10 | Total 0.694442 | Data 0.683847 | NS 10.595066 | LR 9.98e-04
+Epoch 2/260 | Step 4/7 | Global 11 | Total 0.616245 | Data 0.605891 | NS 10.354246 | LR 9.97e-04
+Epoch 2/260 | Step 5/7 | Global 12 | Total 0.413569 | Data 0.403445 | NS 10.124253 | LR 9.97e-04
+Epoch 2/260 | Step 6/7 | Global 13 | Total 0.482790 | Data 0.469728 | NS 13.061933 | LR 9.97e-04
+Epoch 2/260 | Step 7/7 | Global 14 | Total 0.501704 | Data 0.491657 | NS 10.047386 | LR 9.97e-04
+[2026-04-22 13:42:16,124][train][INFO] - Epoch 2 Metrics: Learning Rate =  9.965e-04, Mini-batch total loss =  1.883e-01, Mini-batch data loss =  1.846e-01, Mini-batch NS phy loss =  3.657e+00
+[2026-04-22 13:42:16,124][train][INFO] - Epoch Execution Time:  5.626e+02s, Time/Iter:  2.679e+04ms
+Epoch 3/260 | Step 1/7 | Global 15 | Total 0.396858 | Data 0.388074 | NS 8.783951 | LR 9.96e-04
+Epoch 3/260 | Step 2/7 | Global 16 | Total 0.636987 | Data 0.627370 | NS 9.616408 | LR 9.96e-04
+Epoch 3/260 | Step 3/7 | Global 17 | Total 0.432617 | Data 0.423547 | NS 9.070436 | LR 9.96e-04
+Epoch 3/260 | Step 4/7 | Global 18 | Total 0.413852 | Data 0.402257 | NS 11.594817 | LR 9.96e-04
+Epoch 3/260 | Step 5/7 | Global 19 | Total 0.433653 | Data 0.421129 | NS 12.523922 | LR 9.95e-04
+Epoch 3/260 | Step 6/7 | Global 20 | Total 0.529193 | Data 0.516650 | NS 12.542761 | LR 9.95e-04
+Epoch 3/260 | Step 7/7 | Global 21 | Total 0.448938 | Data 0.434562 | NS 14.376455 | LR 9.95e-04
+[2026-04-22 13:51:37,670][train][INFO] - Epoch 3 Metrics: Learning Rate =  9.948e-04, Mini-batch total loss =  1.568e-01, Mini-batch data loss =  1.530e-01, Mini-batch NS phy loss =  3.739e+00
+[2026-04-22 13:51:37,671][train][INFO] - Epoch Execution Time:  5.615e+02s, Time/Iter:  2.674e+04ms
+Epoch 4/260 | Step 1/7 | Global 22 | Total 0.462293 | Data 0.446414 | NS 15.879327 | LR 9.95e-04
+^C[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/hice1/iaziz6/Training/Training/train_physics_informed.py", line 441, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+[rank0]:     _run_hydra(
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+[rank0]:     _run_app(
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+[rank0]:     run_and_report(
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+[rank0]:     return func()
+[rank0]:            ^^^^^^
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+[rank0]:     lambda: hydra.run(
+[rank0]:             ^^^^^^^^^^
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 119, in run
+[rank0]:     ret = run_job(
+[rank0]:           ^^^^^^^^
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/hydra/core/utils.py", line 186, in run_job
+[rank0]:     ret.return_value = task_function(task_cfg)
+[rank0]:                        ^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/hice1/iaziz6/Training/Training/train_physics_informed.py", line 338, in main
+[rank0]:     for step_in_epoch, data in enumerate(dataset, 1):
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/nvidia/dali/plugin/pytorch/__init__.py", line 245, in __next__
+[rank0]:     self._schedule_runs()
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/nvidia/dali/plugin/base_iterator.py", line 441, in _schedule_runs
+[rank0]:     p.schedule_run()
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/nvidia/dali/pipeline.py", line 1400, in schedule_run
+[rank0]:     self._run_once()
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/nvidia/dali/pipeline.py", line 1646, in _run_once
+[rank0]:     self._iter_setup()
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/nvidia/dali/pipeline.py", line 1941, in _iter_setup
+[rank0]:     iters, success = self._run_input_callbacks()
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/nvidia/dali/pipeline.py", line 1974, in _run_input_callbacks
+[rank0]:     batches.append(group.get_batch(self, self._max_batch_size, self._epoch_idx))
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/nvidia/dali/external_source.py", line 281, in get_batch
+[rank0]:     callback_out = [
+[rank0]:                    ^
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/nvidia/dali/external_source.py", line 282, in <listcomp>
+[rank0]:     self.callback(*self.callback_args(i, epoch_idx)) for i in range(batch_size)
+[rank0]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/physicsnemo/datapipes/cae/mesh_datapipe.py", line 372, in __call__
+[rank0]:     processed_data = self.parse_vtk_data_fn(data, self.variables)
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/hice1/iaziz6/venvs/physicsnemo311_fix/lib/python3.11/site-packages/physicsnemo/datapipes/cae/mesh_datapipe.py", line 478, in _parse_vtk_unstructuredgrid
+[rank0]:     array.GetTuple(j, array_data[j])
+[rank0]: KeyboardInterrupt
+
+(physicsnemo311_fix) [iaziz6@atl1-1-02-003-31-0 Training]$ 
+
